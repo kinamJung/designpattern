@@ -2,7 +2,7 @@ package com.hanains.proxy;
 
 import java.awt.Point;
 
-import com.hanains.proxy.Abstract.Graphic;
+import com.hanains.proxy.Interface.Graphic;
 
 public class Image implements Graphic {
 

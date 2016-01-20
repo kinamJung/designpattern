@@ -2,7 +2,7 @@ package com.hanains.proxy;
 
 import java.awt.Point;
 
-import com.hanains.proxy.Abstract.Graphic;
+import com.hanains.proxy.Interface.Graphic;
 
 public class ImageProxy implements Graphic {
 
@@ -25,6 +25,7 @@ public class ImageProxy implements Graphic {
 		return image;
 	}
 	
+	// 핵심기능을 실행한다.
 	@Override
 	public void draw(Point p) {
 		// TODO Auto-generated method stub

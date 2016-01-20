@@ -3,9 +3,10 @@ package com.hanains.proxy;
 
 import java.lang.reflect.*;
 
-import com.hanains.proxy.Abstract.Graphic;
+import com.hanains.proxy.Interface.Graphic;
 
 
+// Dynamic Proxy를 구성하고자 할때는 InvecationHandler를 구현한다.
 public class GraphicInvocationHandler implements InvocationHandler {
 
 	Graphic graphic;
@@ -15,10 +16,10 @@ public class GraphicInvocationHandler implements InvocationHandler {
 		this.graphic = graphic;
 	}
 
+	//핵심 기능을 실행하는 역할을 한다.
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		// TODO Auto-generated method stub
-
 		try{
 			if(method.getName().startsWith("draw")){
 				return method.invoke(graphic, args);
