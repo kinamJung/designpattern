@@ -14,7 +14,7 @@ public class BridegeTest {
 	public static void main(String[] args) {
 		ConcreteImplementorA impl = new ConcreteImplementorA();
 		ConcreteImplementorB impl2 = new ConcreteImplementorB();
-		
+		System.out.println("");
 		RefinedAbstraction concreteAbstraction = new RefinedAbstraction(impl);
 		concreteAbstraction.operation();
 		
