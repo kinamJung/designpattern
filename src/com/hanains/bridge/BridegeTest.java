@@ -7,6 +7,8 @@ package com.hanains.bridge;
  *     즉, 기능과 구현을 별도의 클래스로 정의해서 서로를 분리하는 방법이다.
  * 	 - 참고. Adapter Pattern
  * 
+ * 
+ * 
  * */
 
 public class BridegeTest {
