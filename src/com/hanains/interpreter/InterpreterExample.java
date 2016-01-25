@@ -26,13 +26,15 @@ public class InterpreterExample {
 
 	public static void main(String[] args) {
 	
-		String expression = "w x z - +";
+		String expression = "a b + c a - -";
 		Evaluator sentence = new Evaluator(expression);
 		Map<String, Expression> variables = new HashMap<>();
-		variables.put("w", new Number(5));
-		variables.put("x", new Number(10));
-		variables.put("z", new Number(42));
+		
+		variables.put("a", new Number(6));
+		variables.put("b", new Number(5));
+		variables.put("c", new Number(1));
 		int result = sentence.interpret(variables);
+		
 		System.out.println(result);
 		
 	}
